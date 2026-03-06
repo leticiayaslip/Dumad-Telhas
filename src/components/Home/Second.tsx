@@ -8,7 +8,7 @@ function Second() {
       <div className="bg-second">
         <div className="base">
           <div className="imgs">
-            <Image src="/index-1.webp" alt={""} width={500} height={500} />
+            <Image src="/index/index-1.webp" alt={""} width={500} height={500} />
           </div>
           <div className="texts">
             <h4>Tudo para sua obra, em um só lugar</h4>
