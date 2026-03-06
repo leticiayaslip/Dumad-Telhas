@@ -6,7 +6,7 @@ export default function First() {
   return (
     <>
       <div className="first">
-        <Image src="/telha.png" alt={"telhinha"} width={300} height={300} />
+        <Image src="/index/telha.png" alt={"telhinha"} width={300} height={300} />
         <div className="texto">
           <span>Nossa Essência</span>
           <h2>Soluções confiáveis para sua obra, com qualidade e agilidade.</h2>
