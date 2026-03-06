@@ -4,9 +4,21 @@ import "@/styles/produtos.scss";
 import Link from "next/link";
 
 const title = "Nossos Produtos";
-const description = "";
-const keywords = "";
-const canonical = "";
+
+export const metadata = {
+  title: "Quem Somos | Dumad Telhas e Madeiras",
+  description:
+    "Conheça a história da Dumad Telhas e Madeiras em Guarulhos. Mais de 12 anos oferecendo telhas, madeiras e materiais de construção com qualidade e confiança.",
+  keywords: [
+    "dumad telhas",
+    "telhas guarulhos",
+    "madeiras guarulhos",
+    "materiais de construção guarulhos",
+  ],
+  alternates: {
+    canonical: "https://www.dumadtelhas.com.br/quem-somos",
+  },
+};
 
 function Produtos() {
   return (
@@ -27,7 +39,7 @@ function Produtos() {
             <Link href="#forros-paineis">Forros e Paineis</Link>
           </li>
           <li>
-            <Link href="#caixa-agua">Caixa D' Agua</Link>
+           <Link href="#caixa-agua">Caixa D&apos; Água</Link>
           </li>
         </ul>
 
@@ -152,7 +164,7 @@ function Produtos() {
             />
           </div>
           <div className="base">
-            <h2 id="caixa-agua">Caixa D' Agua</h2>
+            <h2 id="caixa-agua">Caixa D&apos; Água</h2>
             <ProdutoCard
               image="/produtos/caixa-01.webp"
               title="CAIXA D' ÁGUA"

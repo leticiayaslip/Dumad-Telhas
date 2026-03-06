@@ -2,17 +2,16 @@
 
 import ContactForm from "../ContactForm/ContactForm";
 import "../../styles/index.scss";
-import { FaMapMarkedAlt, FaPhone, FaPhoneAlt } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
+import { FaPhoneAlt } from "react-icons/fa";
 import { settings } from "@/settings/settings";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 
-
 const { numeroTelefone, ddd, email } = settings;
-const { rua, numero, cidade, bairro, estado, cep, urlMaps, mapaEmbed } = settings.endereco;
+const { rua, numero, cidade, bairro, estado, cep, urlMaps, mapaEmbed } =
+  settings.endereco;
 
 export default function Form() {
   const pathname = usePathname();
@@ -23,7 +22,7 @@ export default function Form() {
     <div className="included-form">
       <div className="base">
         <div className="box-details">
-          <div  className="box-title"  >
+          <div className="box-title">
             <p className="title">Fale Conosco</p>
             <p className="description">
               Estamos prontos para tirar suas dúvidas e preparar um orçamento
@@ -32,20 +31,25 @@ export default function Form() {
           </div>
           <div className="contact">
             <div className="base-contato">
-            <FaPhoneAlt /> 
-            <Link
-              href={`tel:0${ddd}${numeroTelefone}`}
-              target="_blank"
-              rel="noreferrer"
-            >{`(${ddd}) ${numeroTelefone}`}</Link>
+              <FaPhoneAlt />
+              <Link
+                href={`tel:0${ddd}${numeroTelefone}`}
+                target="_blank"
+                rel="noreferrer"
+              >{`(${ddd}) ${numeroTelefone}`}</Link>
             </div>
             <div className="base-contato">
-            <IoIosMail />
-            <Link href={`mailto:${email}`} target="_blank" rel="noreferrer"> {`${email}`}</Link>
+              <IoIosMail />
+              <Link href={`mailto:${email}`} target="_blank" rel="noreferrer">
+                {" "}
+                {`${email}`}
+              </Link>
             </div>
             <div className="base-contato">
-            <FaLocationDot />
-            <Link href={urlMaps} target="_blank" rel="noreferrer">{`${rua}, ${numero} - ${bairro}, ${cidade} - ${estado}, ${cep}`} </Link>
+              <FaLocationDot />
+              <Link href={urlMaps} target="_blank" rel="noreferrer">
+                {`${rua}, ${numero} - ${bairro}, ${cidade} - ${estado}, ${cep}`}{" "}
+              </Link>
             </div>
             <div className="mapsIndex">
               <iframe
