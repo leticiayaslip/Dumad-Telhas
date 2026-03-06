@@ -1,0 +1,175 @@
+.base-produtos {
+  color: #000;
+}
+.base-produtos .abas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 0;
+  font-family: var(--font-bricolage-grotesque);
+}
+@media (max-width: 450px) {
+  .base-produtos .abas {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.base-produtos .abas li {
+  padding: 20px;
+}
+@media (max-width: 450px) {
+  .base-produtos .abas li {
+    padding: 8px 0;
+    width: 100%;
+  }
+}
+.base-produtos .abas li a {
+  background-color: #272b75;
+  color: #fff;
+  font-weight: 500;
+  padding: 12px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.base-produtos .abas li a:hover {
+  background-color: #fda71b;
+  transition: 0.3s;
+  color: #272b75;
+}
+@media (max-width: 450px) {
+  .base-produtos .abas li a {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+.base-produtos .conteiner-produtos {
+  background: linear-gradient(#4d52b4 30%, #9196f0 70%, #e1e3ff 100%);
+  margin: 0 auto;
+  padding: 25px 0;
+  width: 95%;
+  border-radius: 5px;
+}
+.base-produtos .conteiner-produtos .base {
+  background-color: #f5f6f8;
+  margin: 15px auto;
+  width: 97%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.base-produtos .conteiner-produtos .base h2 {
+  padding: 20px 240px;
+  font-size: 35px;
+  color: #272b75;
+  background: linear-gradient(155deg, #ffb940 50%, transparent 50%);
+  margin: 25px auto;
+  width: 100%;
+  letter-spacing: 1px;
+  font-family: var(--font-oswald);
+}
+@media (max-width: 1220px) {
+  .base-produtos .conteiner-produtos .base h2 {
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 750px) {
+  .base-produtos .conteiner-produtos .base h2 {
+    background: #ffb940;
+    font-size: 27px;
+  }
+}
+.base-produtos .conteiner-produtos .base .card-produto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  font-family: var(--font-bricolage-grotesque);
+}
+@media (max-width: 930px) {
+  .base-produtos .conteiner-produtos .base .card-produto {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 1200px) {
+  .base-produtos .conteiner-produtos .base .card-produto {
+    width: 85%;
+  }
+}
+.base-produtos .conteiner-produtos .base .card-produto .esquerda {
+  margin: 0 25px;
+  padding: 25px 0;
+}
+.base-produtos .conteiner-produtos .base .card-produto .esquerda img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.5s ease;
+}
+.base-produtos .conteiner-produtos .base .card-produto .esquerda img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+@media (max-width: 500px) {
+  .base-produtos .conteiner-produtos .base .card-produto .esquerda img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.base-produtos .conteiner-produtos .base .card-produto .direita {
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 25px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .base-produtos .conteiner-produtos .base .card-produto .direita {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.base-produtos .conteiner-produtos .base .card-produto .direita h3 {
+  font-size: 32px;
+  color: #fda71b;
+  padding: 10px 0;
+}
+@media (max-width: 800px) {
+  .base-produtos .conteiner-produtos .base .card-produto .direita h3 {
+    font-size: 27px;
+  }
+}
+.base-produtos .conteiner-produtos .base .card-produto .direita p {
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding: 25px 0;
+}
+.base-produtos .conteiner-produtos .base .card-produto .direita a {
+  border: 1px solid #2fb025;
+  border-radius: 5px;
+  padding: 15px;
+  color: #060820;
+  font-size: 16px;
+  margin: 25px 0;
+  transition: 0.6s;
+  font-weight: 500;
+}
+.base-produtos .conteiner-produtos .base .card-produto .direita a svg {
+  color: #2fb025;
+  margin: 0 10px;
+  transition: 0.6s;
+}
+.base-produtos .conteiner-produtos .base .card-produto .direita a:hover {
+  background-color: #2fb025;
+  border: 1px solid #fff;
+  transition: 0.6s;
+  color: #fff;
+  font-weight: 500;
+}
+.base-produtos .conteiner-produtos .base .card-produto .direita a:hover svg {
+  color: #fff;
+  transition: 0.6s;
+}

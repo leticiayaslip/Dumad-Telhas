@@ -1,0 +1,33 @@
+.titlePage {
+  padding: 100px 0 80px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 40vh;
+  background: linear-gradient(100deg, rgba(250, 168, 24, 0.7) 30%, rgba(39, 43, 117, 0.7) 70%), url(/banner/fundo.webp) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 600px) {
+  .titlePage {
+    padding: 140px 0 45px;
+  }
+}
+.titlePage h1 {
+  font-family: var(--font-oswald);
+  font-size: 3.3em;
+  padding: 0px 10px;
+}
+@media (max-width: 1024px) {
+  .titlePage h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 490px) {
+  .titlePage h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}

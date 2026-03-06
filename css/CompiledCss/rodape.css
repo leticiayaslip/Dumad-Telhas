@@ -1,0 +1,353 @@
+footer {
+  background-color: #2c318c;
+  color: #fff;
+  font-family: var(--font-oswald);
+}
+footer .info-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .info-logo .telefone {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+footer .info-logo .telefone a {
+  font-size: 16px;
+  background-color: #faa81e;
+  padding: 7px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+}
+footer .info-logo .telefone svg {
+  color: #faa81e;
+  margin: 0 5px;
+  width: 13px;
+}
+footer .info-logo .telefone:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+@media (max-width: 500px) {
+  footer .info-logo .telefone {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 700px) {
+  footer .info-logo {
+    flex-direction: column;
+  }
+}
+footer .info-logo .logoFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  footer .info-logo .logoFooter {
+    padding: 35px 0;
+  }
+}
+footer .info-logo .logoFooter img {
+  width: 250px;
+}
+footer .top {
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  padding: 40px 0;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: stretch;
+  line-height: 30px;
+}
+footer .top .menuFooter,
+footer .top .contactFooter,
+footer .top .enderecoFooter {
+  width: 350px;
+}
+@media (max-width: 768px) {
+  footer .top .menuFooter,
+  footer .top .contactFooter,
+  footer .top .enderecoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  footer .top .menuFooter,
+  footer .top .contactFooter,
+  footer .top .enderecoFooter {
+    width: 90%;
+  }
+}
+footer .top .enderecoFooter p {
+  padding: 10px 0;
+}
+footer .top .enderecoFooter p a {
+  transition: 0.5s;
+}
+footer .top .enderecoFooter p a:hover {
+  color: #fbcb0a;
+  transition: 0.5s;
+}
+footer .top .enderecoFooter svg {
+  margin: 0 7px;
+  color: #faa81e;
+}
+footer .top .menuFooter ul,
+footer .top .contactFooter ul {
+  padding: 10px 0;
+}
+footer .top .menuFooter ul li,
+footer .top .contactFooter ul li {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  footer .top .menuFooter ul li,
+  footer .top .contactFooter ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+footer .top .contactFooter {
+  display: flex;
+  flex-direction: column;
+}
+footer .top .contactFooter ul {
+  padding: 10px 0;
+}
+footer .top .contactFooter ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #faa81e;
+  font-size: 16px;
+}
+footer .top .contactFooter ul li svg {
+  margin: 0 5px;
+  width: 13px;
+}
+footer .top li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 1px;
+}
+footer .top li a::before {
+  content: "";
+  background-color: #fbcb0a;
+  position: absolute;
+  left: 0px;
+  bottom: 3px;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transition: 0.4s ease;
+  transform-origin: left;
+}
+footer .top li a:hover::before {
+  transform: scaleX(1);
+}
+@media (max-width: 768px) {
+  footer .top li a {
+    justify-content: center;
+  }
+}
+footer .top .titulo {
+  width: 100px;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 15px 0;
+  border-bottom: 2px solid #faa81e;
+  letter-spacing: 1px;
+}
+@media (max-width: 1024px) {
+  footer .top {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  footer .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+}
+footer .footerSelos {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+footer .footerSelos .logoYaslip {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+footer .footerSelos .logoYaslip a {
+  width: 100%;
+}
+footer .footerSelos .logoYaslip object {
+  width: 80px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  footer .footerSelos .logoYaslip {
+    width: 100%;
+  }
+  footer .footerSelos .logoYaslip img {
+    width: 100px;
+  }
+}
+footer .footerSelos ul {
+  display: flex;
+  gap: 10px;
+}
+footer .footerSelos ul a::before {
+  height: 0;
+}
+footer .bottomRowFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #1d215e;
+  color: #fff;
+  font-family: var(--font-bricolage-grotesque);
+}
+@media (max-width: 768px) {
+  footer .bottomRowFooter {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0 79px 0;
+  }
+}
+footer .bottomRowFooter img {
+  width: 42px;
+  height: 60px;
+}
+
+/* Whatsapp Button */
+.whatsapp-animate-circulo-pulse,
+.whatsapp-btn-bg {
+  border-radius: 100%;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.whatsapp-btn {
+  display: block;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    display: none !important;
+  }
+}
+
+.whatsapp-animate-circulo-pulse {
+  width: 90px;
+  height: 90px;
+  bottom: 96px;
+  right: 15px;
+  position: fixed;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 2px solid rgba(30, 30, 30, 0.4);
+  opacity: 0.1;
+  z-index: 2;
+  border-color: #43b91e;
+}
+
+.whatsapp-btn-config {
+  width: 47px;
+  height: 47px;
+  bottom: 118px;
+  right: 37px;
+  position: fixed;
+  background: url("/selos/WhatsAppButton.webp") center center no-repeat rgba(30, 30, 30, 0.1);
+  border-radius: 100%;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  transform-origin: 50% 50%;
+  background-size: 100%;
+  z-index: 999999;
+}
+
+.whatsapp-btn-bg {
+  width: 60px;
+  height: 60px;
+  bottom: 111px;
+  right: 31px;
+  position: fixed;
+  -ms-transition: all 0.2s ease-in-out;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+  opacity: 0.4 !important;
+  z-index: 999999;
+}
+
+.whatsapp-btn-bg,
+.whatsapp-btn-bg,
+.whatsapp-btn-config {
+  background-color: #43b91e;
+}
+
+.tada {
+  animation-name: tada;
+}
+@keyframes tada {
+  from, to {
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
