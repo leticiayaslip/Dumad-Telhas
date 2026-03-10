@@ -3,6 +3,8 @@ import { settings } from "@/settings/settings";
 import "normalize.css";
 import "@/styles/globals.scss";
 
+import "aos/dist/aos.css";
+
 import {
   frankRuhl,
   josefinSans,
@@ -19,6 +21,7 @@ import Topo from "@/partials/Topo";
 import Rodape from "@/partials/Rodape";
 import RodapeMobile from "@/partials/RodapeMobile";
 import Form from "@/components/Home/Form";
+import AOSProvider from "@/lib/AOS";
 
 const { title, description, keywords, canonical, openGraph, robots } = settings;
 
@@ -63,6 +66,7 @@ export default function RootLayout({
         className={`${frankRuhl.variable} ${poppins.variable} ${josefinSans.variable} ${openSans.variable} ${oswald.variable} ${bricolageGrotesque.variable}`}
       >
         {/* GTM BODY */}
+        <AOSProvider />
         <Topo />
         {children}
         <Form />
